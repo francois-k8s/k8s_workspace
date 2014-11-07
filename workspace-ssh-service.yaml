@@ -1,0 +1,9 @@
+id: ssh-workspace
+kind: Service
+apiVersion: v1beta1
+port: 5555
+containerPort: 22
+selector:
+  name: workspace
+labels:
+  name: workspace
