@@ -7,7 +7,7 @@ desiredState:
     id: workspace
     containers:
       - name: workspace
-        image: francois/k8s-workspace
+        image: francois/k8s-workspace:0.1.0
         cpu: 100
         #privileged: true
         ports:
