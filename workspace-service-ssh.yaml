@@ -5,5 +5,6 @@ port: 5555
 containerPort: 22
 selector:
   name: workspace
+  service: ssh
 labels:
-  name: workspace
+  name: workspace-service
