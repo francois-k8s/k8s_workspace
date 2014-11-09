@@ -1,9 +1,0 @@
-id: db-keystone-service
-kind: Service
-apiVersion: v1beta1
-port: 3306
-containerPort: 3306
-selector:
-  name: db-keystone
-labels:
-  name: db-keystone
