@@ -16,10 +16,15 @@ desiredState:
         volumeMounts:
           - name: docker-socket
             mountPath: /var/run/docker.sock
+          - name: host-share
+            mountPath: /root/shares
     volumes:
       - name: docker-socket
         source:
           {hostDir: {path: /var/run/docker.sock}}
+      - name: host-share
+        source:
+          {hostDir: {path: /opt/shares/workspace}}
 labels: 
   name: workspace
   service: ssh
